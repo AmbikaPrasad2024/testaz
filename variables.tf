@@ -11,22 +11,22 @@ variable "prefix" {
 
 variable "vnet" {
   description = "The virtual network that has to be used."
-  default     = "testing"
+  default     = "az-co-git-npr-ci-vnet"
 }
 
 variable "subnet_id" {
   description = "The subnet in the vnet to be used."
-  default     = "/subscriptions/3f6f6e25-f0dc-40fb-b39c-07d0e42f3837/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/virtualNetworks/testing/subnets/VMNetwork"
+  default     = "/subscriptions/93e0af43-4076-4942-b9d9-5d65b17fbf57/resourceGroups/GIT-Non-Production-NW-RG/providers/Microsoft.Network/virtualNetworks/az-co-git-npr-ci-vnet/subnets/az-co-git-npr-ci-app-ansible-snet"
 }
 
 variable "location" {
   description = "The region where the virtual network is created."
-  default     = "centralus"
+  default     = "Centralindia"
 }
 
 variable "resource_group_name" {
   description = "Resource Group Name to place the VM."
-  default     = "NetworkWatcherRG"
+  default     = "VMProvsining-Testing"
 }
 
 variable "vm_size" {
