@@ -9,6 +9,7 @@ terraform {
 
 provider "azurerm" { 
   features {}
+  skip_provider_registration = true
 }
 
 resource "azurerm_network_interface" "vm_nic" {
